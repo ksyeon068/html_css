@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky 스크롤 내렸을때 어떻게 동작하게 만드는 방법</title>
+    <style>
+        body{
+            padding-bottom: 3000px;
+        }
+        .positionbox{
+            height: 15000px;
+        }
+        .position >div{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background: #ffa5a5;
+            display: inline-block;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+
+        }
+        .position .atatic{ background: #d9ffb6;
+            position: static;
+            top: 0;
+        }
+        .position .fixed{ background: #97b8ff;
+            position: fixed;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <h2>스크롤을 내려보세요</h2>
+        <div class="sticky">sticky</div>
+        <div class="atatic">atatic</div>
+        <div class="fixed">fixed</div>
+    </div>
+</body>
+</html>

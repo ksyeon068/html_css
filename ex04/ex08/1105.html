@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+        }
+        #warp{
+            background: #d1c396;
+            width: 1300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header{}
+        nav{
+            margin-top: 10px;
+            float: right;
+        }
+        #menu{
+			position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        #menu li{
+            list-style: none;
+			float: left;
+        }
+        #menu li.list{margin-right: 15px;}
+        #menu li.list a{
+            position: relative;
+        }
+        #menu li.list a::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 13px;
+            background: #ffffff;
+            top: 5px;
+            right: -7px;
+        }
+        a:hover{
+            font-weight: bold;
+        }
+        form{
+            position: relative;
+            margin-top: 30px;
+            left: -8px;
+        }
+        aside{
+            background: #ccc;
+            width: 400px;
+            height: 800px;
+            margin: 10px;
+        }
+        #main{
+            background: #ff8e8e;
+            width: 800px;
+            height: 800px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <header>
+            <img src="./images/clouds-2371482_1280.jpg" width="1280" height="480" alt="구름헤더">
+        </header>
+        <nav>
+            <ul id="menu">
+                <li class="list"><a href="#">홈</a></li>
+                <li class="list"><a href="#">소개</a></li>
+                <li class="list"><a href="#">카테고리</a></li>
+                <li><a href="#">방명록</a></li>
+            </ul>
+            <form>
+                <input type="search" name="seachBox">
+                <input type="submit" value="검색">
+            </form>
+        </nav>
+        <div id="main">
+            <aside>aside</aside>
+            <section>section</section>
+            <article>article</article>
+        </div id="main">
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

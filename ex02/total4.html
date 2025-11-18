@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>simantic</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        #wrap{width: 500px; margin: 50px auto;}
+        #wrap h1{text-align: center;}
+        .box{
+            width: 100%;
+            border: 5px solid;
+            padding: 20px;
+        }
+        header{
+            border: 5px solid;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        nav{
+            border: 5px solid;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav1{width: 30%;}
+        .nav2{width: 38%;}
+        nav>div{
+            background-color: aqua;
+            padding: 20px;
+        }
+        article{
+            border: 5px solid;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        article p{text-align: left;}
+        article figure{
+            border: 5px solid;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        article figure figcaption{
+            background: pink;
+            padding: 20px;
+        }
+        footer{
+            border: 5px solid;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer div{
+            background: red;
+            padding: 20px;
+        }
+        .footer1{width: 25%;}
+        .footer2{width: 48%;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Simantic</h1>
+        <div class="box">
+            <header>header
+                <nav>
+                    <div class="nav1">&nbsp;</div>
+                    <div class="nav2">nav</div>
+                    <div class="nav1">&nbsp;</div>
+                </nav>
+            </header>
+            <article>article
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Voluptatum molestiae perspiciatis ut incidunt,<br>
+                    reprehenderit est ipsum temporibus, pariatur
+                </p>
+                <figure>
+                    <figcaption>figure</figcaption>
+                </figure>
+            </article>
+            <footer>
+                <div class="footer1">&nbsp;</div>
+                <div class="footer2">footer</div>
+                <div class="footer1">&nbsp;</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

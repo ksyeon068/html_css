@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>이미지 배치하고 롤오버시 블러 효과 적용하기</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			/* body{}
+			h1{
+				text-align: center;
+				font-style: italic;
+				font-size: 3em;
+				color: #fff;
+				text-shadow: 0 0 10px #666;
+			}
+			#bookList{
+				background: url(./images/book_bg.png) no-repeat;
+				border: 5px solid#dbdbdb;
+				border-radius: 30px;
+				width: 498px;
+				height: 246px;
+				margin: 20px auto;
+				box-shadow: 0 0 20px #666;
+			}
+			#bookList ul{
+				list-style: none;
+				display: flex;
+				position: relative;
+				top: 24px;
+				left: 20px;
+			}
+			#bookList ul li{
+				margin-right: 64px;
+			}
+			#bookList ul li a{}
+			#bookList ul li a span{}
+			#bookList ul li:hover a span img{
+				box-shadow: 0 0 50px #009900;
+			}
+			#bookList ul li a span .hit{} */
+			body{}
+			body h1{
+				text-align: center;
+				font-size: 3em;
+				font-style: italic;
+				color: #fff;
+				text-shadow: 0 0 10px #666;
+			}
+			body #bookList{
+				background: url(./images/book_bg.png) no-repeat;
+				border: 5px solid #dbdbdb;
+				box-shadow: 0 0 20px #666;
+				border-radius: 10px;
+				width: 498px;
+				height: 246px;
+				margin: 20px auto;
+			}
+			body #bookList ul{
+				list-style: none;
+				display: flex;
+				position: relative;
+				top: 24px;
+				left: 20px;
+			}
+			body #bookList ul li{
+				margin-right: 64px;
+				position: relative;
+			}
+			body #bookList ul li a{}
+			body #bookList ul li a span{}
+			body #bookList ul li:hover a span img{
+				box-shadow: 0 0 20px green;
+			}
+			body #bookList ul li a span .hit{
+				background: url(./images/ico_hot.png) no-repeat;
+				display: block;
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				top: -12px;
+				left: -15px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>New Book</h1>
+		<div id="bookList">
+			<ul>
+				<li>
+					<a href="#">
+						<span>
+							<img src="images/book1.png" width="107" height="156" alt="book1" class="frame"/>
+							<span class="hit"></span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="images/book2.png" width="107" height="156" alt="book2" class="frame"/>
+							<span class="hit"></span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>
+							<img src="images/book3.png" width="107" height="156" alt="book3" />
+							<span class="hit"></span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

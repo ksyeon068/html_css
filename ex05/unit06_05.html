@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빈 공간 채우는 그리드의 auto-fit, auto-fill</title>
+    <style>
+        .cnt4{
+            width: 100%;
+            max-width: 1440px;
+            margin: 10px auto;
+            display: grid;
+            grid-template-rows: repeat(3, 200px);
+            gap: 5px;
+            grid-template-areas: 
+            "item1 item1 item1"
+            "item2 item3 item3"
+            "item2 item4 item5"
+            ;
+        }
+        .item1{
+            background: #ff9f9f;
+            grid-area: item1;
+        }
+        .item2{
+            background: #ecff9a;
+            grid-area: item2;
+        }
+        .item3{
+            background: #9fccff;
+            grid-area: item3;
+        }
+        .item4{
+            background: #ffc59f;
+            grid-area: item4;
+        }
+        .item5{
+            background: #c796ff;
+            grid-area: item5;
+        }
+        @media screen and (max-width:768px) {
+            .cnt4{
+                display: block;
+            }
+            .cnt4>div{
+                height: 300px;
+            }
+        }
+        .gallery{
+            width: 100%;
+            display: grid;
+            gap: 5px;
+            grid-template-rows: repeat(3,300px);
+            grid-template-areas: 
+            "img1 img1 img2"
+            "img1 img1 img3"
+            "img4 img5 img6"
+            ;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cnt4">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2025/10/17/09/29/nature-9899712_640.jpg" alt="img1" class="img1">
+        <img src="https://cdn.pixabay.com/photo/2025/02/14/22/12/hyena-9407501_640.jpg" alt="img1" class="img2">
+        <img src="https://cdn.pixabay.com/photo/2020/04/09/11/42/dogs-5021084_640.jpg" alt="img1" class="img3">
+        <img src="https://cdn.pixabay.com/photo/2019/09/21/15/36/animal-4494180_640.jpg" alt="img1" class="img4">
+        <img src="https://cdn.pixabay.com/photo/2013/06/29/21/18/wolf-142173_640.jpg" alt="img1" class="img5">
+        <img src="https://cdn.pixabay.com/photo/2022/09/30/12/56/cat-7489398_640.jpg" alt="img1" class="img6">
+    </div>
+</body>
+</html>

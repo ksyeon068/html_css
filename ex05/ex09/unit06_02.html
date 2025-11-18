@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그리드</title>
+  <style>
+    .cnt>div{color: #fff; text-align: center; font-size: 2em;}
+    .cnt>div:nth-child(1){background: rgb(255, 186, 186);}
+    .cnt>div:nth-child(2){background: rgb(255, 217, 161);}
+    .cnt>div:nth-child(3){background: rgb(212, 255, 131);}
+    .cnt>div:nth-child(4){background: rgb(163, 241, 255);}
+    .cnt>div:nth-child(5){background: rgb(202, 161, 255);}
+    .cnt>div:nth-child(6){background: rgb(255, 152, 224);}
+    .cnt{
+      display: grid;
+      grid-template-columns: 100px 200px 300px;
+      /* grid-template-rows: 50px 100px; */
+      grid-auto-rows: 100px;
+      margin-bottom: 10px;
+    }
+    .cnt1{
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr)
+    }
+    .cnt2{
+      font-size: 12px;
+      width: 1200px;
+      border: 1px solid #ccc;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows: minmax(300px, auto);
+    }
+  </style>
+</head>
+<body>
+  <div class="cnt">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+  <div class="cnt cnt1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+  <div class="cnt cnt2">
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam eligendi vitae delectus saepe quam quaerat voluptatibus ratione ipsum sit, in, ipsa voluptate at ea architecto, quasi deserunt iure? Labore.</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam eligendi vitae delectus saepe quam quaerat voluptatibus ratione ipsum sit, in, ipsa voluptate at ea architecto, quasi deserunt iure? Labore.</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam eligendi vitae delectus saepe quam quaerat voluptatibus ratione ipsum sit, in, ipsa voluptate at ea architecto, quasi deserunt iure? Labore.</div>
+    <div>quisquam eligendi vitae delectus saepe quam quaerat voluptatibus ratione ipsum sit, in, ipsa voluptate at ea architecto, quasi deserunt iure? Labore.</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore </div>
+  </div>
+</body>
+</html>
