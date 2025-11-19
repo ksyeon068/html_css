@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heart{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+        }
+        .cls-1{
+            stroke: #9e3a53;
+            stroke-width: 1;
+            animation: beat 2s linear forwards;
+            stroke-dasharray: 830;
+            stroke-dashoffset: 830;
+        }
+        @keyframes beat{
+            from{stroke-dashoffset: 830;}
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <?xml version="1.0" encoding="UTF-8"?>
+<div class="heart">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265.92 229.78">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #9c203f;
+            stroke-miterlimit: 10;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M133.49,52.1c1.41-4.6,3.59-9,6-13.14C153.49,13.21,182.49-.79,211.49,1.21c16,1,30,7,40,21,27,40,11,88-16,123-4,4-7,9-11,13-28,27-56,54-91,71-38-22-76-45-105-79C1.49,119.21-5.51,78.21,5.49,40.21c1-2,2-4,3-7C19.49,9.21,46.08-2.16,71.37,1.02c31.78,4,47.11,26.97,57.78,50.08"/>
+    </svg>
+</div>
+</body>
+</html>

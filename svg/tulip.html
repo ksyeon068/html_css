@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>튤립</title>
+    <style>
+        .tt{width: 300px; height: 400px; margin: 50px;}
+        .cls-1{
+            stroke: #a84f14;
+            stroke-width: 1;
+            animation: beat  3s linear forwards, fillup 1.3s 0.1s ease-in-out  forwards;
+            stroke-dasharray: 1200;
+            stroke-dashoffset: 1200;
+        }
+        .cls-2{
+            stroke: #0f521f;
+            stroke-width: 1;
+            animation: beat 3s linear forwards, fillup2 2s 0.1s ease-in-out  forwards;
+            stroke-dasharray: 1200;
+            stroke-dashoffset: 1200;
+        }
+        @keyframes fillup{
+            from{fill: transparent;}
+            99%{fill: transparent;}
+            to{fill: rgb(253, 209, 87);}
+        }
+         @keyframes fillup2{
+            from{fill: transparent;}
+            99%{fill: transparent;}
+            to{fill: rgb(112, 201, 77);}
+        }
+        @keyframes beat{
+            from{stroke-dashoffset: 1200;}
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <?xml version="1.0" encoding="UTF-8"?>
+<div class="tt">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.64 316.73">
+      <defs>
+        <style>
+          .cls-1 {
+            stroke-miterlimit: 10;
+            fill: none;
+          }
+          .cls-2 {
+            stroke-miterlimit: 10;
+            fill: none;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M50.86,35.93L87.38,.7l34.5,35.23,38.07-22.16s43.22,125.57-78.37,125.57S12.22,12.64,12.22,12.64l36,21.71"/>
+      <path class="cls-2" d="M81.95,139.34v95.11s-9.78-24-28-37.78C27.58,176.73,1.06,172.12,1.06,172.12c0,0,22.75,34.04,46.33,79.37,11.56,22.22,34.56,30.51,34.56,30.51v34.22h8.44v-4.59s28.44,4.44,46.67-27.56,7.11-36,32.89-64.89,23.11-25.78,23.11-25.78c0,0-46.22,4.44-74.22,44.44-28,40-29.78,51.11-29.78,51.11V139.34h-3.56"/>
+    </svg>
+</div>
+</body>
+</html>
